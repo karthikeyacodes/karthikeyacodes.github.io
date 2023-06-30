@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 *{
-    background-color: black;
+    background-color: #303030;
     color: white;
     font-family: 'Nunito';
 }
@@ -11,16 +11,25 @@ body,h1,h2,p,img,div,span{
     background: none;
 }
 
+header{
+    position: sticky;
+    top: 0;
+    background: none;
+}
+
 .head{
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     gap: 10%;
     padding: 28px;
     font-size: 25px;
+    backdrop-filter: blur(5px);
 }
 
-.head a{
+a{
     text-decoration: none;
+    background: none;
 }
 
 .intro{
@@ -28,6 +37,16 @@ body,h1,h2,p,img,div,span{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     height: 100svh;
+}
+
+@media(max-width: 1040px){
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 10%;
+    }   
+
 }
 
 .intro img{
@@ -38,8 +57,10 @@ body,h1,h2,p,img,div,span{
 .intro-one{
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-size: 2rem;
+    gap: 30px;
+    margin: 30px;
+    align-items: center;
 }
 
 .image{
@@ -47,19 +68,19 @@ body,h1,h2,p,img,div,span{
     justify-content: center;
 }
 
+.small-intro{
+    text-align: center;
+}
+
 .intro-one span{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 45px;
     font-weight: bold;
+    text-align: center;
     background: linear-gradient(
             to right,#FA00FF, #0057FF, #00FF66, #DBFF00, #FF6B00, #FA0000);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-}
-
-.small-intro{
-    padding: 20px 20px;
-    margin: 30px 30px;
 }
 
 .intro-one button{  
@@ -75,6 +96,11 @@ body,h1,h2,p,img,div,span{
 .button{
     text-decoration: none;
     background: none;
+}
+
+.line{
+    border: 1px solid white;
+    margin-bottom: 10px;
 }
 
 .about-sec{
@@ -97,6 +123,19 @@ body,h1,h2,p,img,div,span{
     display: flex;
     justify-content: space-evenly;
     padding: 3%;
+}
+
+@media(max-width: 768px){
+    .logos{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .intro img{
+        width: 55%;
+        border-radius: 50%;
+    }
 }
 
 .card{
@@ -143,4 +182,16 @@ body,h1,h2,p,img,div,span{
 .contact-flex span{
     font-size: 25px;
     margin: 2%;
+}
+
+@media(max-width: 600px){
+    .contact-content{
+        font-size: 24px;
+        margin: 15px;
+    }
+
+    .contact-flex span{
+        font-size: 18px;
+        margin: 15px;
+    }
 }
