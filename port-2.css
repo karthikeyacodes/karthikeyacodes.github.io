@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    background-color: black;
+    color: white;
+    font-family: 'Nunito';
+}
+
+body,h1,h2,p,img,div,span{
+    margin: 0;
+    background: none;
+}
+
+.head{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10%;
+    padding: 28px;
+    font-size: 25px;
+}
+
+.head a{
+    text-decoration: none;
+}
+
+.intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 100svh;
+}
+
+.intro img{
+    width: 45%;
+    border-radius: 50%;
+}
+
+.intro-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+}
+
+.intro-one span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    background: linear-gradient(
+            to right,#FA00FF, #0057FF, #00FF66, #DBFF00, #FF6B00, #FA0000);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+}
+
+.small-intro{
+    padding: 20px 20px;
+    margin: 30px 30px;
+}
+
+.intro-one button{  
+    width: 200px;
+    height: 80px;
+    font-size: 1.75rem;
+    background: linear-gradient(to right,#AD41B7, #D82F2F);
+    font-family: sans-serif;
+    font-weight: 800;
+    border-radius: 60px;
+}
+
+.button{
+    text-decoration: none;
+    background: none;
+}
+
+.about-sec{
+    font-size: 30px;
+}
+
+.about-sec p{
+    margin: 3%;
+    text-indent: 80px;
+}
+
+.about, .skills, .education, .contact{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    margin: 3%;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3%;
+}
+
+.card{
+    background: linear-gradient(to right,#341AD6, #341AD6, #900DBE, #BC2564, #F20707);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.total{
+    margin: 3%;
+    background: linear-gradient(to right,#341AD6, #341AD6, #900DBE, #BC2564, #F20707);
+    padding: 2%;
+    border-radius: 50px;
+}
+
+.name{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.branch, .time{
+    margin: 0 30px;
+    font-size: 20px;
+}
+
+.contact-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-content{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 2%;
+}
+
+.contact-logos{
+    display: flex;
+    gap: 3rem;
+}
+
+.contact-flex span{
+    font-size: 25px;
+    margin: 2%;
+}
