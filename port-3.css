@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 * {
-    background-color: #303030;
+    background-color: #343a40;
+
     color: white;
     font-family: 'Nunito';
+
+    scroll-behavior: smooth;
 }
 
 body,
@@ -24,16 +27,6 @@ header {
 }
 
 .head {
-    display: none;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 10%;
-    padding: 28px;
-    font-size: 25px;
-    backdrop-filter: blur(5px);
-}
-
-.head2 {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -43,9 +36,6 @@ header {
     backdrop-filter: blur(5px);
 }
 
-.navbar {
-    display: none;
-}
 
 a {
     text-decoration: none;
@@ -86,6 +76,7 @@ a {
 .image {
     display: flex;
     justify-content: center;
+    transition: transform 1s ease;
 }
 
 .small-intro {
@@ -97,9 +88,7 @@ a {
     font-size: 45px;
     font-weight: bold;
     text-align: center;
-    background: linear-gradient(to right, #FA00FF, #0057FF, #00FF66, #DBFF00, #FF6B00, #FA0000);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: white;
 }
 
 .intro-one button {
@@ -110,6 +99,8 @@ a {
     font-family: sans-serif;
     font-weight: 800;
     border-radius: 60px;
+    cursor: pointer;
+    transition: transform 1s ease;
 }
 
 .button {
@@ -131,26 +122,21 @@ a {
     text-indent: 80px;
 }
 
-.about,
-.skills,
-.education,
-.contact {
+.headings {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 45px;
-    margin: 3%;
+    text-align: center;
 }
 
 .logos {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
     padding: 3%;
-}
-
-@media (min-width: 768px) {
-    .head {
-        display: none !important
-    }
+    background: linear-gradient(to bottom, #57059e, #4a00e0);
+    margin: 3%;
+    border-radius: 10px;
 }
 
 @media(max-width: 768px) {
@@ -169,28 +155,21 @@ a {
     .head2 {
         display: none;
     }
-
-
-    .navbar {
-        position: sticky;
-        top: 0;
-        backdrop-filter: blur(5px);
-        display: flex;
-        justify-content: flex-end;
-        margin: 10px;
-        background-color: #303030;
-    }
 }
 
 .card {
-    background: linear-gradient(to right, #341AD6, #341AD6, #900DBE, #BC2564, #F20707);
     padding: 20px;
     border-radius: 20px;
+    background-color: rgba(0, 0, 22, 0.9);
+}
+
+.card h2{
+    text-align: center;
 }
 
 .total {
     margin: 3%;
-    background: linear-gradient(to right, #341AD6, #341AD6, #900DBE, #BC2564, #F20707);
+    background: linear-gradient(to bottom, #57059e, #4a00e0);
     padding: 2%;
     border-radius: 50px;
 }

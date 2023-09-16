@@ -3,30 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="port-2.css">
+    <link rel="stylesheet" href="port-3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Karthikeya Varma</title>
 </head>
 <body>
     <header>
-        <div class="head2" id="myLinks2">
-            <div><a href="#">Home</a></div>
-            <div><a href="#skills">Skills</a></div>
-            <div><a href="#education">Education</a></div>
-            <div><a href="#contact">Contact</a></div>
-        </div>
             <div>
-                <div class="navbar">
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>
                 <div class="head" id="myLinks">
                 <div><a href="#">Home</a></div>
                 <div><a href="#skills">Skills</a></div>
                 <div><a href="#education">Education</a></div>
                 <div><a href="#contact">Contact</a></div>
-                        </div>
+                </div>
             </div>
     </header>
 
@@ -35,7 +24,7 @@
             <div class="intro-one">
                 <span>I'm Karthikeya Varma</span>
                 <div class="small-intro">Undergraduate Student at IIT Hyderabad</div>
-                <button type="button"><a href="#about" class="button">About me</a></button>
+                <a href="#about" class="button"><button type="button">About me</button></a>
             </div>
             <div class="image">
                 <img src="WhatsApp Image 2023-06-13 at 9.54.11 PM-1.jpeg" alt="My Image">
@@ -45,36 +34,49 @@
     <div class="line"></div>
 
     <section class="about-sec">
-        <span id="about" class="about">About</span>
+        <h2 id="about" class="headings">About</h2>
         <p>I am Karthikeya Varma, an undergraduate B.Tech student at IIT Hyderabad pursuing Maths and Computing degree.
             I am enthusiastic about web development and in learning new skills. I am also a good collaborator 
             and find pleasure working with others.</p>
     </section>
 
     <section>
-        <span id="skills" class="skills">Skills</span>
+        <h2 id="skills" class="headings">Skills</h2>
         <div class="logos">
             <div class="card">
-                <img src="html.png" alt="html logo png" style="background-color: black;">
-                <h2><a href="https://www.sololearn.com/certificates/CC-1UGF2MK0" target="_blank">HTML</a></h2>
+                <img src="c-language.png" alt="C Language logo png">
+                <h2>C</h2>
             </div>
             <div class="card">
-                <img src="css-3 (1).png" alt="css logo png">
-                <h2><a href="https://www.sololearn.com/certificates/CC-7LK0HZNF" target="_blank">CSS</a></h2>
-            </div>
-            <div class="card">
-                <img src="js.png" alt="js logo png" style="border-radius: 30px;">
-                <h2><a href="https://www.sololearn.com/certificates/CC-EC6ROX2V" target="_blank">JS</a></h2>
+                <img src="c-.png" alt="C++ logo png">
+                <h2>C++</h2>
             </div>
             <div class="card">
                 <img src="python.png" alt="python logo png">
-                <h2><a href="https://www.sololearn.com/certificates/CC-TZVP6IXA" target="_blank">PYTHON</a></h2>
+                <h2>PYTHON</h2>
             </div>
+            <div class="card">
+                <img src="html.png" alt="html logo png" style="background-color: black;">
+                <h2>HTML</h2>
+            </div>
+            <div class="card">
+                <img src="css-3 (1).png" alt="css logo png">
+                <h2>CSS</h2>
+            </div>
+            <div class="card">
+                <img src="js.png" alt="js logo png" style="border-radius: 30px;">
+                <h2>JS</h2>
+            </div>
+            <div class="card">
+                <img src="react native_icon.png" alt="REACT logo png">
+                <h2>REACT JS</h2>
+            </div>
+            
         </div>
     </section>
 
     <section>
-        <span id="education" class="education">Education</span>
+        <h2 id="education" class="headings">Education</h2>
         <div class="total">
             <div class="name">Indian Institute of Technology, Hyderabad</div>
             <div class="branch">B.Tech Maths and Computing</div>
@@ -89,7 +91,7 @@
     </section>
 
     <section>
-        <span id="contact" class="contact">Contact</span>
+        <h2 id="contact" class="headings">Contact</h2>
         <div class="total">
             <div class="contact-flex">
                 <div class="contact-content">
@@ -105,14 +107,5 @@
             </div>
         </div>
     </section>
-
-    <script>function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }</script>
 </body>
 </html>
