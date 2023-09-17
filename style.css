@@ -198,7 +198,7 @@ a {
         gap: 0;
         flex-direction: column;
         width: 100%;
-        padding: 0;
+        padding: 20px 0;
         text-align: center;
         transition: 0.3s;
     }
@@ -228,13 +228,39 @@ a {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    width: 130px;
+    height: 100px;
     padding: 20px;
     border-radius: 20px;
     background-color: rgba(0, 0, 22, 0.9);
 }
 
+.card img{
+    width: 64px;
+    height: 64px;
+}
+
 .card h2{
     text-align: center;
+}
+
+@media(max-width: 435px) {
+
+    .card img{
+        width: 56px;
+        height: 56px;
+    }
+
+    .card{
+        width: 100px;
+        height: 100px;
+    }
+    
 }
 
 .total {
