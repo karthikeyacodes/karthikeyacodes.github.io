@@ -15,7 +15,7 @@ h2,
 p,
 img,
 div,
-span {
+span,ul {
     margin: 0;
     background: none;
 }
@@ -26,21 +26,48 @@ header {
     background: none;
 }
 
-.head {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 10%;
-    padding: 28px;
-    font-size: 25px;
-    backdrop-filter: blur(5px);
+li{
+    list-style: none;
 }
-
 
 a {
     text-decoration: none;
     background: none;
 }
+
+.navbar,.nav-menu,.nav-item{
+    background: none;
+}
+
+.navbar{
+    font-size: 25px;
+    backdrop-filter: blur(5px);
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 130px;
+    padding: 30px 50px;
+    align-items: center;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-
+}
+
 
 .intro {
     display: grid;
@@ -139,11 +166,55 @@ a {
     border-radius: 10px;
 }
 
+
+@media(max-width: 820px){
+
+    .hamburger-background{
+        display: block;
+    }
+    
+    .hamburger{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;    
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        background-color: #343a40;
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 85%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+}
+
 @media(max-width: 768px) {
-    .logos {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
+
+    .logos{
+        justify-content: center;
     }
 
     .intro img {
@@ -152,9 +223,7 @@ a {
         margin-top: 20px;
     }
 
-    .head2 {
-        display: none;
-    }
+    
 }
 
 .card {
