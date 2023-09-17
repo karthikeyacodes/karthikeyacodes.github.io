@@ -197,7 +197,8 @@ a {
         top: 70px;
         gap: 0;
         flex-direction: column;
-        width: 85%;
+        width: 100%;
+        padding: 0;
         text-align: center;
         transition: 0.3s;
     }
